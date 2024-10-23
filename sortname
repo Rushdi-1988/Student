@@ -1,0 +1,20 @@
+
+letterList = []
+userName = ""
+
+display("Please enter your first name:")
+userName = getInput()
+
+for each char in userName:
+    letterList.append(char)
+
+display("Your letters before sorting:")
+display(letterList)
+
+display("Press 'a' to sort the letters in ascending order.")
+
+
+onKeyPress('a'):
+    letterList.sort() // Sorts the list in ascending order
+    display("Your letters after sorting:")
+    display(letterList)
